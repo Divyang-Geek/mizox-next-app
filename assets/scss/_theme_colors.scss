@@ -1,0 +1,27 @@
+$primary_color: #000000;
+$secondary_color: #7546F3;
+$tertiary_color: #CDCCFF;
+$quaternary_color: #EFEAFD;
+$quinary_color: #BAA0FF;
+$body_color: #F4F3FB;
+$white_color: #FFFFFF;
+$black_color: #000000;
+$gray_color1: #BBBBBB;
+$gray_color2: #666666;
+$gray_color3: #989898;
+$gray_color4: #D8D8D8;
+
+// Colors map
+// $colors: (
+//     "primary": $primary_color,
+//     "secondary": $secondary_color,
+// );
+
+// @each $color_key, $color_val in $colors {
+//     .#{$color_key}-text {
+//         color: $color_val;
+//     }
+//     .#{$color_key}-bg {
+//         background-color: $color_val;
+//     }
+// }
