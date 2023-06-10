@@ -1,7 +1,7 @@
 // Components
 import Link from "next/link";
 
-const Button = ({ className, url, type, size, children }) => {
+const Button = ({ className, url, type, size, children, onClick }) => {
     return (
         <>
             {url ? (
@@ -9,7 +9,7 @@ const Button = ({ className, url, type, size, children }) => {
                     {children}
                 </Link>
             ) : (
-                <button type={type ? type : "button"} className={`sec_btn ${className ? className : ""}${size === "sm" ? "sm_btn" : ""}${size === "xs" ? "xs_btn" : ""}`}>
+                <button type={type ? type : "button"} className={`sec_btn ${className ? className : ""}${size === "sm" ? "sm_btn" : ""}${size === "xs" ? "xs_btn" : ""}`} onClick={onClick}>
                     {children}
                 </button>
             )}

@@ -1,7 +1,8 @@
 "use client";
 
 // Css
-import "bootstrap/scss/bootstrap-grid.scss";
+// import "bootstrap/scss/bootstrap-grid.scss";
+import "bootstrap/scss/bootstrap.scss";
 import "../assets/scss/index.scss";
 
 // import { Poppins, Rasa } from "next/font/google";
@@ -22,13 +23,14 @@ import "../assets/scss/index.scss";
 // });
 
 // export const metadata = {
-//     title: "Mizox company",
+//     title: "Mizox",
 //     description: "Mizox - Design and Development",
 // };
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <title>Mizox - Design and Development</title>
             {/* <body className={`${poppins.variable} ${rasa.variable}`} suppressHydrationWarning={true}> */}
             <body suppressHydrationWarning={true}>{children}</body>
         </html>

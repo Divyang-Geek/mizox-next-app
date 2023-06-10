@@ -1,9 +1,14 @@
+import { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import footerGalleryData from "@/app/api/footerGalleryData";
 import Image from "next/image";
-import { Col, Container, Row } from "react-bootstrap";
 import ContactInfo from "../ContactInfo";
+import DemoModal from "../modals/DemoModal";
+import Button from "../UI/Button";
 
 const Footer = () => {
+    const [demoModal, setDemoModal] = useState(false);
+
     return (
         <>
             <footer className="main_footer">
@@ -34,11 +39,14 @@ const Footer = () => {
                             <div className="footer_contact white_text">
                                 <h4 className="h4_title">Contact</h4>
                                 <ContactInfo variant="vertical" />
+                                <Button onClick={() => setDemoModal(true)}>Modal</Button>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </footer>
+
+            <DemoModal show={demoModal} setShow={setDemoModal} />
         </>
     );
 };

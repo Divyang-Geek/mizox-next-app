@@ -4,6 +4,7 @@
 import aboutImg from "@/assets/images/about-image.png";
 
 // Components
+import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import FrontLayout from "./components/FrontLayout";
 import Button from "./components/UI/Button";
@@ -16,8 +17,11 @@ import Title from "./components/UI/Title";
 import BlogSec from "./components/common/BlogSec";
 import ProfessionalSec from "./components/common/ProfessionalSec";
 import ContactSec from "./components/common/ContactSec";
+import DemoModal2 from "./components/modals/DemoModal2";
 
 const Index = () => {
+    const [demoModal2, setDemoModal2] = useState(false);
+
     return (
         <>
             <FrontLayout>
@@ -65,7 +69,7 @@ const Index = () => {
                                                 <p>Lorem ipsum dolor sit amet consec tetur notted adipisi cing elit sed</p>
                                             </div>
                                         </div>
-                                        <Button url="/">Discover more</Button>
+                                        <Button onClick={() => setDemoModal2(true)}>Demo Modal 2</Button>
                                     </div>
                                 </Col>
                             </Row>
@@ -80,6 +84,8 @@ const Index = () => {
                 <ProfessionalSec />
                 <ContactSec />
             </FrontLayout>
+
+            <DemoModal2 show={demoModal2} setShow={setDemoModal2} />
         </>
     );
 };
