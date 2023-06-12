@@ -1,9 +1,9 @@
 "use client";
 
-import Footer from "./Footer";
 // Components
-import Header from "./Header";
 import localFont from "next/font/local";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const poppinsFont = localFont({
     src: [

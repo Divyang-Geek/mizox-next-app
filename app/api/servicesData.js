@@ -1,3 +1,4 @@
+// Images
 import serviceImg1 from "@/assets/images/service-image1.png";
 import serviceImg2 from "@/assets/images/service-image2.png";
 import serviceImg3 from "@/assets/images/service-image3.png";

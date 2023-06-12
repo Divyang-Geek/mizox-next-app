@@ -1,3 +1,4 @@
+// Components
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import footerGalleryData from "@/app/api/footerGalleryData";

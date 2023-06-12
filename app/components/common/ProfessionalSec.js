@@ -1,3 +1,4 @@
+// Components
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "../UI/Title";
 import Image from "next/image";

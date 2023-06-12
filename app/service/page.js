@@ -1,3 +1,4 @@
+// Components
 import FrontLayout from "../components/FrontLayout";
 
 const Service = () => {

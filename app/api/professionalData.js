@@ -1,3 +1,4 @@
+// Images
 import professionalImg1 from "@/assets/images/professional-img1.png";
 import professionalImg2 from "@/assets/images/professional-img2.png";
 import professionalImg3 from "@/assets/images/professional-img3.png";

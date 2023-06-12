@@ -1,3 +1,4 @@
+// Images
 import portfolioIcon1 from "@/assets/images/portfolio-icon1.png";
 import portfolioIcon2 from "@/assets/images/portfolio-icon2.png";
 import portfolioIcon3 from "@/assets/images/portfolio-icon3.png";

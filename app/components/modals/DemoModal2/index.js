@@ -1,3 +1,4 @@
+// Components
 import FrontModal from "../../FrontModal";
 
 const DemoModal2 = ({ show, setShow }) => {

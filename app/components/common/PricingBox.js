@@ -1,6 +1,9 @@
+// Images
+import checkImg from "../../../assets/images/check.png";
+
+// Components
 import Button from "../UI/Button";
 import Image from "next/image";
-import checkImg from "../../../assets/images/check.png";
 
 const PricingBox = ({ ...data }) => {
     const { id, title, price, description, services, url } = data;
